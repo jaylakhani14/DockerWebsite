@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website </title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <!-- Favicon -->
 </head>
 <body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> What is Docker </title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+<body style="background-color: lightgrey">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color: white">My Website </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" style="color: white">Docker</a></li>
+                    <li><a href="virtualization.html" style="color: white">What is Virtulization</a></li>
+                    <li><a href="containerization.html" style="color: white">Containerization</a></li>
+                    <li><a href="compare.html" style="color: white">Comparizon</a></li>
+                    <li><a href="tuto.html" style="color: white">Tutorial</a></li>
+                    <li><a href="basic.html" style="color: white">Linux Command</a></li>
+                    <li><a href="tut".html" style="color: white">Connect Docker Pycharm</a></li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="new">
+        <h2> What is Containerization? </h2>
+        <p>Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS). A container is essentially a fully packaged and portable computing environment: </p>
+
+        <h2> How Does it Work?</h2>
+        <p>Each container is an executable package of software, running on top of a host OS. A host(s) may support many containers (tens, hundreds or even thousands) concurrently, such as in the case of a complex microservices architecture that uses numerous containerized ADCs. This setup works because all containers run minimal, resource-isolated processes that others cannot access.
+</p>
+        <p>Think of a containerized application as the top layer of a multi-tier cake:
+            <li>At the bottom, there is the hardware of the infrastructure in question, including its CPU(s), disk storage and network interfaces.</li>
+            <li>At the bottom, there is the hardware of the infrastructure in question, including its CPU(s), disk storage and network interfaces.</li>
+            <li>The container engine and its minimal guest OS, which are particular to the containerization technology being used, sit atop the host OS.</li>
+            <li>At the very top are the binaries and libraries (bins/libs) for each application and the apps themselves, running in their isolated user spaces (containers).</li>
+        </p>
+
+        <img src="images/3.png" height="650" width="550"/>
+
+
+        <h2>Main Benifits of Contanizeration</h2>
+        <p>Containerized apps can be readily delivered to users in a digital workspace. More specifically, containerizing a microservices-based application, a set of Citrix ADCs or a database (among other possibilities) has a broad spectrum of distinctive benefits, ranging from superior agility during software development to easier cost controls.
+        <li>More agile, DevOps-oriented software development</li>
+        <li>Less overhead and lower costs than VMs</li>
+        <li>Excellent portability across digital workspaces</li>
+        <li>Fault isolation for applications and microservices</li>
+        <li>Easier management through orchestration</li>
+
+        <li><a href="https://www.citrix.com/solutions/app-delivery-and-security/what-is-containerization.html" style="color: brown">For more information, https://www.citrix.com/solutions/app-delivery-and-security/what-is-containerization.html </a></li>
+        </p>
+    </div>
+
+
+</header>
 
 </body>
+
+<footer class="foot">
+    <div class="alert alert-primary" role="alert">
+        <small>&copy; Copyright 2021, @Jay Lakhani, Sidharth Vemuri</small>
+    </div>
+</footer>
 </html>
