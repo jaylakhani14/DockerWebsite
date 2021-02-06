@@ -1,7 +1,7 @@
 # mywebsite
 
 ## Link:
-[website link](https://github.com/jaylakhani14/mywebsite/index.html)
+[website link](https://jaylakhani14.github.io/mywebsite/)
 
 ## Contributors:
 - Jay Lakhani
