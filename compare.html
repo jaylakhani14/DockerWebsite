@@ -1,10 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website </title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <!-- Favicon -->
 </head>
 <body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Comparison between Containerization vs Virtualization </title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+<body style="background-color: lightgrey">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color: white">My Website </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" style="color: white">Docker</a></li>
+                    <li><a href="virtualization.html" style="color: white">What is Virtulization</a></li>
+                    <li><a href="containerization.html" style="color: white">Containerization</a></li>
+                    <li><a href="compare.html" style="color: white">Comparizon</a></li>
+                    <li><a href="tuto.html" style="color: white">Tutorial</a></li>
+                    <li><a href="basic.html" style="color: white">Linux Command</a></li>
+                    <li><a href="tut".html" style="color: white">Connect Docker Pycharm</a></li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="new">
+        <h2> What is Containerization? </h2>
+        <p>Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS). A container is essentially a fully packaged and portable computing environment: </p>
+        <p>Containerization solves any number of problems for software development and deployment.</p>
+
+        <h2> What is Virtulization? </h2>
+        <p>Virtualization is technology that lets you create useful IT services using resources that are traditionally bound to hardware. It allows you to use a physical machine’s full capacity by distributing its capabilities among many users or environments. </p>
+
+        <h2> Pros of Containerization:</h2>
+        <p> Here is the List:
+        <li>Multiple OS can run at the same time</li>
+        <li>Easy recovery and maintenance in a condition of failure case</li>
+        <li>Due to less usage/need for infrastructure total cost of ownership came down</li>
+        </p>
+
+        <h2> Cons of Containerization:</h2>
+        <p> here is the List:
+        <li>All containers on a particular host machine must be designed to run on the same kind of OS. Containers based on a different OS will require a different host.</li>
+        <li>Because the OS is shared, a security vulnerability in the OS kernel is a threat to all containers on the host machine.</li>
+        <li>Containerization is still a new solution with wide variances in implementation plans and skilled resources, making adoption a challenging process for some</li>
+
+
+        <h2> Pros of Virtulization:</h2>
+        <p>Visually, each virtual machine image looks like a data folder. Each can be moved and copied as easily as you can move and copy other kinds of files. In this way, your team can centralize workloads and run several different operating systems without increasing overhead, a huge advantage over on-premises hardware. You can also update apps and the OS without affecting the end-user experience.</p>
+
+        <h2> Cons of Virtulization:</h2>
+        <p> Here is the List:
+        <li>Unstable performance because of running multiple VMs</li>
+        <li>The efficiency of Hypervisors is not as good as the host OS</li>
+        <li>Long boot-up time </li>
+        </p>
+
+        <h2> Main differencies between two terms:</h2>
+        <p>The advantage of multiple copies:
+        <li>one of the major points that differentiate these two processes is containers’ temporary behavior. Many copies of a container can exist at the same time in a system like orchestration. If any containers failed, one can remove that and replace it, and there will be no change or impact on service. Older versions can exist at the same time with the new versions. Removal and replacement of the new versions can be done easily if any operation gets failed</li>
+        </p>
+
+        <p>Scaling related workloads:
+        <li> There is a vast difference between the scalability of a containerized workload and a virtual workload. The containers contain only those services which are basic in nature and which their functions require, but among those services, one can be a web server like Nginx and virtualization workload system, like cabernets, having the capability of judging that when there is a need of scaling out the number of containers based on the sequence of traffic follows and can copy the images of the container on its own and also remove them from the system.</li>
+        </p>
+
+        <p>Foundation for running an application:
+        <li>The Linux containers format is the foundation for containerization format. So, containerization can only run the Linux application as it will support only the Linux environment.</li>
+        </p>
+
+        <p>Using microservices architecture:
+        <li>Google firstly uses the architecture “microservices” and then by Netflix. One can operate these systems without excluding any single application. In the form of functions, they perform small workloads that may be contacted through API, and they perform different functions. These functions can be seen in traditional applications, although many applications can perform the same functions on repeat.</li>
+        </p>
+
+         <h2> Summary on Comparison:</h2>
+        <img src="images/4.png" height="650" width="550"/>
+
+        <h2>Containerization or virtualization: What’s the right path for you?</h2>
+        <p>Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server.</p>
+        <p>Virtual machines are great for supporting applications that require an operating system’s full functionality when you want to deploy multiple applications on a server, or when you have a wide variety of operating systems to manage. Containers are a better choice when your biggest priority is to minimize the number of servers you’re using for multiple applications.</p>
+        <p>Your use case matters too. Containers are an excellent choice for tasks with a much shorter lifecycle. With their fast set up time, they are suitable for tasks that may only take a few hours. Virtual machines have a longer lifecycle than containers, and are best used for longer periods of time.</p>
+        <p>The way forward for your organization will depend on everything from the size of your operations and workflows to your IT culture and skill sets. And, containerization and virtualization technologies are coming together in some interesting new ways that could influence your decision making.</p>
+        <p>Ultimately, virtualization and containerization may both have a place in your IT strategy. Consider your ultimate goals, immediate use cases, and team skillset before setting down a specific path. At Burwood Group, we recently leveraged containerization to run our own client-facing managed services portal: read about the project scope and outcomes here.</p>
+
+
+
+
+
+        <li><a href="https://www.cloudmanagementinsider.com/containerization-vs-virtualization/" style="color: brown">For more information, https://www.cloudmanagementinsider.com/containerization-vs-virtualization/ </a></li>
+        </p>
+    </div>
+
+
+</header>
 
 </body>
+
+<footer class="foot">
+    <div class="alert alert-primary" role="alert">
+        <small>&copy; Copyright 2021, @Jay Lakhani, Sidharth Vemuri</small>
+    </div>
+</footer>
 </html>
