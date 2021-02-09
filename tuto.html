@@ -59,21 +59,29 @@
         </div><!-- /.container-fluid -->
     </nav>
     <div class="new">
-        <h2> Connecting Docker to PyCharm </h2>
-        <h3>Step 1: Create Django Project:</h3>
-        <p> In PyCharm -> File -> New Project -> Django</p>
-        <p>Use a local interpreter</p>
+        <h2> A tutorial on how to Setup a web server using Docker </h2>
+        <h3>The first thing we will do is: Build a Docker File </h3>
+        <p>Use vim and create a Docker File with the following information:</p>
+        <p> FROM ubuntu
+               RUN apt-get update
+               RUN apt-get install –y apache2
+               RUN apt-get install –y apache2-utils
+               RUN apt-get clean
+               EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]</p>
 
-        <h3>Step 2:Make PyCharm Docker Interpreter</h3>
-        <li>Preferences -> Project Interpreter</li>
-        <li>Project Interpreter</li>
-        <li>Configure Remote Python Interpreter</li>
-        <li> Docker -> Machine Name</li>
+        <h3>Step 2: Run the Docker build command to build the Docker file.</h3>
+        <p>Use the following command: sudo docker build –t=”mywebserver”. </p>
 
-        <h3>Step 3:Run Django</h3>
-        <p>Click the run Django button and the following image should pop up on your screen.</p>
+        <h3>Step 3: Create a container</h3>
+        <p>Use the command: sudo docker run –d –p 80:80 mywebserver</p>
+        <img src="images/docker_run_command.jpg"/>
 
-        <img src="images/pycharm-django_admin.png"/>
+        <li>The port number exposed by the container is 80. Hence with the –p command, we are mapping the same port number to the 80 port number on our localhost.</li>
+        <li>The –d option is used to run the container in detached mode. This is so that the container can run in the background</li>
+        <p>Check the localhost page and you should be able to see that Apache is running:</p>
+        <img src="images/apache_is_running.jpg"/>
+        <li><a href="https://www.tutorialspoint.com/docker/building_web_server_docker_file.htm" style="color: brown">For more information,https://www.tutorialspoint.com/docker/building_web_server_docker_file.htm  </a></li>
+
 
 
 
